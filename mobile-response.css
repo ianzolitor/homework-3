@@ -1,0 +1,124 @@
+body {
+	display: inline-block;
+	background-color: darkgrey;
+	font-family:verdana;
+	font-size: 24px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:50px;
+
+}
+
+
+
+h2 {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.headline {
+
+	text-align:center;
+}
+
+.intro-text {
+	margin-top:200px;
+	margin-left: 616px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.main-photo {
+	background-image: url("ian zolitor.jpg");
+	float: left;
+	width:600px;
+	height:400px;
+	background-size: 100%;
+	border:4px solid black;
+	border-radius: 15%;
+}
+
+
+.main-text {
+	display:block;
+}
+
+.secondary-photo {
+	background-image: url("coding-hand.jpg");
+	width:300px;
+	height:200px;
+	background-size:100%;
+	float:right;
+	border:4px solid black;
+	border-radius:15%;
+
+}
+
+.secondary-text {
+	margin-top: 80px;
+}
+
+
+p {
+	margin-top: 80px;
+}
+
+
+
+/*Tablets and small desktop*/
+@media all and (min-width: 768px)and (max-width: 979px) {
+
+	body {
+		/*remove padding, remove margin*/
+	}
+	.main-photo {
+		float:none;
+		margin:auto;
+		background-size: 100%;
+		width:600px;
+		height:400px;
+
+	}
+	.intro-text {
+		margin-left:20px;
+		margin-top:450px;
+	}
+
+	.closing-text {
+		text-align: center;
+	}
+
+}
+
+
+/*phone in landscape mode*/
+@media all and (max-width: 767px){
+	
+	body {
+		font-size: 2vw;
+		
+}
+
+	.intro-text {
+		margin:0;
+		display:block;
+		float:left;
+	}
+	.both-photos {
+		max-height: 20vw;
+		max-width:30vw;
+
+	}
+	.main-text {
+		margin-top:50px;
+	}
+	.secondary-text, .closing-text {
+		margin:0; padding:0;
+	}
+
+}
+
+/*phone in portrait mode*/
+@media all and (max-width: 480px){
+	
+}
